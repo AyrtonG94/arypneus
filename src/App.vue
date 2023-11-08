@@ -45,7 +45,7 @@ body {
 }
 
 .logoary {
-  height: 350px;
+  height: 351px;
 }
 
 .pneu {
