@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="containner">
-            <h1>Avaliações positivas</h1>
+            <h1 class="titulo">Avaliações positivas</h1>
             <div class="nome">
                 <img src="avaliacao.PNG">
                 <p>Roberto Garcia</p>
@@ -9,8 +9,8 @@
             </div>
 
             <div class="comentario">
-                <b> Ótimo pneu demora um pouco pra chegar mais chega </b>
-                <p>Pneu bom bom desempenho na estradas </p>
+                <b> Ótimo pneu, passou 2 dias do prazo mas chegou certinho </b>
+                <p>Pneu tem um bom desempenho na estradas </p>
             </div>
         </div>
 
@@ -19,7 +19,7 @@
             <div class="nome">
                 <img src="avaliacao.PNG">
                 <p>Diego Fagundes</p>
-                <p>15/09/2023</p>
+                <p>27/09/2023</p>
             </div>
 
             <div class="comentario">
@@ -58,5 +58,16 @@
 
 .comentario {
     border-bottom: 1px solid rgb(207, 205, 205);
+}
+
+@media(max-width: 430px) {
+    .containner {
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+   .titulo {
+    font-size: 18px;
+    font-weight: bold;
+   }
 }
 </style>

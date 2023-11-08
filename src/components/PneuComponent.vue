@@ -1,5 +1,16 @@
 <script setup>
-    import AvaliacaoComponent from './AvaliacaoComponent.vue';
+import {ref} from 'vue'
+import AvaliacaoComponent from './AvaliacaoComponent.vue';
+import CadastroComponent from './CadastroComponent.vue';
+
+let cadastroForm = ref(false)
+
+function cadastro() {
+    let resumo = document.querySelector('.resumo')
+    resumo.innerHTML = '';
+    cadastroForm.value = true
+}
+
 </script>
 
 <template>
@@ -8,18 +19,18 @@
     <div class="principal">
         <img src="pneu.jpg" alt="pneu">
 
-        <div class="resumo">
-            <p> <h2>Pneu Formula by Pirelli Aro 15 Formula Evo 195/60R15 88H </h2></p>
-            <p> Marca: Pirelli - Cód: 41376</p>
-            <p> <h2>R$ 389,90</h2> à vista no PIX </p>
-            <p>ou em até 12x de R$ 35,90 sem juros</p>
-
-            <button>COMPRAR</button>
+        <div class="resumo">    
+            <p><h2>Pneu Formula by Pirelli Aro 15 Formula Evo 195/60R15 88H </h2></p>    
+            <p><h2>R$ 389,90</h2> à vista no PIX </p>
+            <p>Marca: Pirelli - Cód: 41376</p>
+            <p>ou em até 12x de R$ 32,50 sem juros</p>
+            <button v-on:click="cadastro">COMPRAR</button>     
         </div>
+       <div v-if="cadastroForm"><CadastroComponent/></div>
     </div>
 
     <div class="tabela-container">
-        <h1>Detalhes técnicos</h1>
+        <h1 class="titulo">Detalhes técnicos</h1>
         <div class="tabela">
             <table class="table table-striped">
                 <tbody>
@@ -135,7 +146,7 @@
                         <td>Nota</td>
                         <td>4.8 /5</td>
                     </tr>
-                    
+
                 </tbody>
             </table>
         </div>
@@ -148,12 +159,16 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .principal {
     display: flex;
 }
 
 .resumo {
     border: 1px solid rgb(248, 246, 246);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 button {
@@ -169,4 +184,23 @@ button {
 img {
     height: 400px;
 }
-</style>
+
+
+@media(max-width: 430px) {
+
+    
+    .principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        margin-bottom: 15px;
+    }
+
+    .titulo {
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+}</style>

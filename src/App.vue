@@ -22,6 +22,7 @@ import PneuComponent from './components/PneuComponent.vue';
   <section class="pneu">
     <PneuComponent></PneuComponent>
   </section>
+ 
 
 </template>
 
@@ -50,4 +51,6 @@ body {
 .pneu {
   margin-top: 80px;
 }
+
+
 </style>
