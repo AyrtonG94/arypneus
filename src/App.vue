@@ -9,7 +9,7 @@ import PneuComponent from './components/PneuComponent.vue';
   <header class="topo">
 
     <section class="logo-containner">
-      <img src="Logo.png" class="logoary">
+      <img src="@/assets/Logo.png" class="logoary">
     </section>
 
   </header>

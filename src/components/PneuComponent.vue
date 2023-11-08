@@ -17,7 +17,7 @@ function cadastro() {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <div class="principal">
-        <img src="pneu.jpg" alt="pneu">
+        <img src="@/assets/pneu.jpg" alt="pneu">
 
         <div class="resumo">    
             <p><h2>Pneu Formula by Pirelli Aro 15 Formula Evo 195/60R15 88H </h2></p>    

@@ -3,7 +3,7 @@
         <div class="containner">
             <h1 class="titulo">Avaliações positivas</h1>
             <div class="nome">
-                <img src="avaliacao.PNG">
+                <img src="@/assets/avaliacao.PNG">
                 <p>Roberto Garcia</p>
                 <p>20/10/2023</p>
             </div>
@@ -17,7 +17,7 @@
 
         <div class="containner">
             <div class="nome">
-                <img src="avaliacao.PNG">
+                <img src="@/assets/avaliacao.PNG">
                 <p>Diego Fagundes</p>
                 <p>27/09/2023</p>
             </div>
@@ -31,7 +31,7 @@
 
         <div class="containner">
             <div class="nome">
-                <img src="avaliacao.PNG">
+                <img src="@/assets/avaliacao.PNG">
                 <p>Elaine Castro</p>
                 <p>15/09/2023</p>
             </div>
