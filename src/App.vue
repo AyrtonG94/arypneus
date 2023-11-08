@@ -36,7 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: black;
-  height: 130px;
+  height: 132px;
 }
 
 .logo-containner {
